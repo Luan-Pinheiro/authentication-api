@@ -36,7 +36,7 @@ public class ProductController {
   @GetMapping
   public ResponseEntity getProducts() {
     List<ProductResponseDTO> products = this.productRepository.findAll().stream().map(ProductResponseDTO::new).toList();
-    
+  
     return ResponseEntity.ok(products);
   }
 }
