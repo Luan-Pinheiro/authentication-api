@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @RestController
-@RequestMapping("products")
+@RequestMapping("/products")
 public class ProductController {
   @Autowired
   ProductRepository productRepository;
